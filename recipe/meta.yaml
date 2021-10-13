@@ -1,5 +1,5 @@
 {% set name = "suitcase-msgpack" %}
-{% set version = "0.2.4" %}
+{% set version = "0.3.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c6209bf915972a3fdf50bd96ed858156526bb0e109a1e98b24b91b53636e9ff5
+  sha256: f846a7b63ae2d7676787f5269ca2bdd3c33532fc80608499c696752628cd4e5c
 
 build:
   number: 0
