@@ -11,19 +11,19 @@ source:
   sha256: c6209bf915972a3fdf50bd96ed858156526bb0e109a1e98b24b91b53636e9ff5
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - pip
     - python >=3.6
+    - pip
   run:
+    - python >=3.6
     - event-model >=1.8.0
     - msgpack-python
     - msgpack-numpy
-    - python >=3.6
     - suitcase-utils
 
 test:
@@ -43,3 +43,4 @@ about:
 extra:
   recipe-maintainers:
     - CJ-Wright
+    - mrakitin
